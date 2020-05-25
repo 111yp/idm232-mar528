@@ -16,6 +16,17 @@
 		grid-template-columns: repeat(2, 1fr) !important;
 	}
 }
+
+@media screen and (max-width: 1500px) {
+	.grid-container {
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
+	.ribbon {
+		width: 7vw !important;
+	}
+}
+
+
 .title-search {
 	left:50%;
    	top:50%;
@@ -86,6 +97,14 @@ body {
 	width: 100%;
     height: 100%;
 }
+
+
+
+
+
+
+
+
 
 .overlay {
 	position: absolute;
@@ -167,12 +186,14 @@ body {
 	font-size: 1vw;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
+	color: black;
 }
 
 .wrapper p {
 	font-size: .75vw;
 	font-family: 'Merriweather', serif;
 	font-weight: 300;
+	color: black;
 }
 
 .wrapper {
@@ -197,10 +218,20 @@ body {
 .wrapper .name {
 	 font-size: 1vw;
 	 text-align: center;
-	 letter-spacing: 0.1em;
 	 text-transform: uppercase;
-	 padding: 1vw;
+	 padding: 1vw 1vw 0;
 }
+
+.wrapper .subtitle {
+	font-size: .75vw !important;
+	opacity: .5;
+	font-size: 1vw;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0vw 1vw .5vw;
+}
+
+
 
 .wrapper .border {
 	 border: #4755AB 2px solid;
@@ -211,6 +242,37 @@ body {
 
 .wrapper .info {
 	 margin-top: -11px;
-	 letter-spacing: 0.1em;
 	 padding: 1vw;
 }
+
+*, *::before, *::after{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.wrapper::before{
+	position: absolute;
+	top:2rem;
+	right:-0.5rem;
+	content: '';
+	background: #4755AB;
+	height: 28px;
+	width: 28px;
+	transform : rotate(45deg);
+  }
+  
+  .ribbon{
+	z-index: 2;
+	position: absolute;
+	top: 11px;
+	right: -14px;
+	padding: 0.5rem;
+	width: 5vw;
+	background: #5655AC;
+	color: white;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
+  }
+
