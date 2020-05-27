@@ -15,6 +15,32 @@
 	.grid-container {
 		grid-template-columns: repeat(2, 1fr) !important;
 	}
+
+	.wrapper .name {
+		font-size: 3vw !important;
+
+   }
+   
+   .wrapper .subtitle, p {
+	   	font-size: 2vw !important;
+   }
+
+   .header h2 {
+		font-size: 14vw !important;
+   }
+
+   #myInput {
+		background-image: url('../svg/search.svg');
+		background-size: 2.5vw !important;
+    	background-position: 10px !important;
+   	 	background-repeat: no-repeat;
+    	width:  50vw !important;
+    	font-size: 3vw !important;
+    	padding: .5vw 4vw .5vw 5vw !important;
+    	border: 1px solid #ccc;
+    	border-radius: 3px;
+	}
+
 }
 
 @media screen and (max-width: 1500px) {
@@ -183,7 +209,6 @@ body {
 }
 
 .wrapper h1 {
-	font-size: 1vw;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	color: black;
@@ -223,9 +248,8 @@ body {
 }
 
 .wrapper .subtitle {
-	font-size: .75vw !important;
+	font-size: .75vw;
 	opacity: .5;
-	font-size: 1vw;
 	text-align: center;
 	text-transform: uppercase;
 	padding: 0vw 1vw .5vw;

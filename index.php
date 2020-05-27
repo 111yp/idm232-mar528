@@ -1,9 +1,22 @@
 <?php
+
+$host = $_SERVER['HTTP_HOST:8888'];
+if ($host == 'localhost') {
+   // Local database credentials
   $dbhost = "localhost";
   $dbuser = "root";
   $dbpass = "root";
   $dbname = "recipes";
-  $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+}
+else {
+  // Remote database credentials
+  $dbhost = "localhost";
+  $dbuser = "kwbbahmy_recipe";
+  $dbpass = "R@lphie_0930!";
+  $dbname = "kwbbahmy_recipeasy";
+}
+
+$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
 
   // Check the connection is good with no errors
