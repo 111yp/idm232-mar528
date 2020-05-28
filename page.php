@@ -34,8 +34,6 @@ $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
       $data = $_GET["data"];
   }
 
-  echo $data;
-
   // Step 2: Preform Database Query
 $query = "SELECT * FROM `table 1`";
 $result = mysqli_query($connection, $query);
@@ -127,8 +125,6 @@ mysqli_close($connection);
                            for ($i = 0; $i < sizeof($step_imgs[$data]); $i++) {
                                  
                               $step_imgs_split = $step_imgs[$data][$i];
-
-
                               $step_title = $all_steps[$data][$i*2];
                               $step_description = $all_steps[$data][($i*2)+1];
 

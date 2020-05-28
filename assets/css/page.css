@@ -6,6 +6,27 @@
 	}
 }
 
+@media only screen and (max-width: 800px) {
+	.ribbon, .wrapper::before {
+		display: none;
+	}
+	.wrapper .border {
+		margin: 2vw auto !important;
+		width: 6vw !important;
+	}
+	.wrapper .name {
+		padding: 1vw 2vw 0 !important;
+	}
+	.wrapper .subtitle {
+		padding: 0vw 2vw 1vw !important;
+	}
+	.wrapper .info {
+		padding: 2vw !important;
+	}
+	.grid-container {
+		padding: 0vw !important;
+	}
+}
 
 @media only screen and (max-width: 1000px) {
 	.body {
@@ -37,12 +58,19 @@
     	border: 1px solid #ccc;
     	border-radius: 3px;
 	}
+	#navbar {
+		height: 2.5rem !important;
+	}
+	#navbar img {
+		width: 1rem !important;
+		margin-left: 1rem !important;
+	}
 
 }
 
 @media screen and (max-width: 1500px) {
 	.ribbon {
-		width: 7vw !important;
+		width: 7vw ;
 	}
 }
 
