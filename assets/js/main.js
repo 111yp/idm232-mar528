@@ -1,3 +1,26 @@
+document.addEventListener("DOMContentLoaded", ready);
+
+function ready()
+{
+
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction()
+    {
+        if (window.pageYOffset >= sticky) 
+        {
+            navbar.classList.add("sticky");
+        }
+        else 
+        {
+            navbar.classList.remove("sticky");
+        }
+    }
+}
+
 function myFunction() {
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("myInput");

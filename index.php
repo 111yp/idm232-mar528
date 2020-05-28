@@ -1,6 +1,6 @@
 <?php
 
-$host = $_SERVER['HTTP_HOST:8888'];
+$host = $_SERVER['HTTP_HOST'];
 if ($host == 'localhost') {
    // Local database credentials
   $dbhost = "localhost";
@@ -56,13 +56,6 @@ while ($row = mysqli_fetch_row($result)) {
 
 mysqli_close($connection);
 
-
-
-$cook_times = "45min";
-$titles = "Ancho-Orange Chicken";
-$subtitles = "with Kale Rice & Roasted Carrots";
-$descriptions = "Weʼre amping up chicken breasts with a glaze of smoky ancho chile paste and fresh orange juice in this recipe. On the side, roasted carrots and lightly creamy, golden raisin-studded rice perfectly accent the sweetness of the glaze.";
-
 ?>
 
 <!DOCTYPE html>
@@ -100,38 +93,17 @@ $descriptions = "Weʼre amping up chicken breasts with a glaze of smoky ancho ch
                   for ($i = 1; $i < sizeof($title); $i++) {
                      $b = $i + 1;
                      echo "<div class='grid-item'>";
-                        echo "<a class='wrapper' href=''>";
+                        echo "<a class='wrapper' href='page.php?data=$i'>";
                            echo "<div class='ribbon'>$cook_time[$i]</div>";
                            echo "<img class='header' src='../assets/img/all-images/$main_img[$i]'></img>";
                            echo "<h1 class='name'>$title[$i]</h1>";
                            echo "<h1 class='subtitle'>$subtitle[$i]</h1>";
                            echo "<div class='border'></div>";
                            echo "<p class='info'>$description[$i]</p>";
-                           echo "<div class='grey-border'></div>";
                         echo "</a>";
                      echo "</div>";
                   }
                ?>
-
-<!--
-<div class="grid-item">
-<a class="wrapper" href="/pages/IDM241/IDM-241-hub.html">
-
-   <div class="ribbon">1</div>
-   <img class="header" src="assets/img/test1.jpg"></img>
-   <h1 class="name">TEST TEST TEST</h1>
-   <h1 class="subtitle">TEST TEST TEST</h1>
-   
-   <div class="border"></div>
-   
-   <p class="info">TEST TEST TEST</p>
-   
-   <div class="grey-border"></div>
-   
-</a>
-</div> -->
-
-
             </div> 
          </div>
       </div>
