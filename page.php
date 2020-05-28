@@ -109,11 +109,11 @@ mysqli_close($connection);
                <?php
                   echo "<div class='grid-item'>";
                      echo "<div class='wrapper'>";
-                        echo "<img class='header image-padding' src='../assets/img/all-images/$main_img[$data]'></img>";
                         echo "<h1 class='name'>$title[$data] $subtitle[$data]</h1>";
                         echo "<h1 class='subtitle'>Serving Size: $servings[$data] | Cal per Serving: $cal_per_serving[$data] | Cook Time: $cook_time[$data]</h1>";
                         echo "<div class='border'></div>";
                         echo "<p class='info'>$description[$data]</p>";
+                        echo "<img class='header' src='../assets/img/all-images/$main_img[$data]'></img>";
 
                         echo "<div class='display-container'>";
                            echo "<div class='grid-item'>";

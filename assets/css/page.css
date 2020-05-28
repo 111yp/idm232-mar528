@@ -95,10 +95,8 @@ body {
 .header {
 	position: relative;
 	display: flex;
-}
-
-.image-padding {
-	padding: 2vw;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
 }
 
 .header img {
